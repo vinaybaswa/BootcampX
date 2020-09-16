@@ -28,7 +28,7 @@ pool.query(`
   .then(res => {
     res.rows.forEach(user => {
       console.log(`${user.name} has an id of ${user.student_id} and was in the ${user.cohort} cohort`);
-    })
+    });
   });
 
 //Query Parameters
@@ -42,5 +42,5 @@ pool.query(`
   .then(res => {
     res.rows.forEach(user => {
       console.log(`${user.name} has an id of ${user.student_id} and was in the ${user.cohort} cohort`);
-    })
+    });
   }).catch(err => console.error('query error', err.stack));

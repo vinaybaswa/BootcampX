@@ -20,4 +20,4 @@ ORDER BY teacher;
   .catch(err => console.error('query error', err.stack));
 
 
-console.log('connected')
+console.log('connected');
